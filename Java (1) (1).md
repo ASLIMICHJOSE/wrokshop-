@@ -882,7 +882,7 @@ String s1= new Stirng ("hello";
 
 ### String methods
 
-Length:
+#### Length:
 
  it is used to return the length of the given string in int type
 
@@ -891,7 +891,7 @@ Length:
  System.out.print(s1.length());
 
 
- CharAt:
+#### CharAt:
 
  it used to return the charaacter at the given index
 
@@ -899,22 +899,72 @@ Length:
  String s1="hello";
  System.out.print(s1.charAt(3)); ///l
 
-IndexOf():
+#### IndexOf():
 it is used to return the index of first occurence of the given character
 
 eg:
 String s1="hello";
  System.out.print(s1.indexOf(4)); ///0
 
- Trim:
+#### Trim:
  it is used to remove the unwanted space (before,after)between the string
  eg:
  String s1="    hello   ";
  System.out.print(s1.trim()); /// hello
 
 
-Split:
+#### Split:
 it is used to 
 eg:
+String s1="h,e,l,l,o";
+Sring s1[]=s.split(",");
+for(String a:s1);
+ System.out.print(a); 
+
+
+output:
+first line = l
+last=,
+
+
+#### UpperCase:
 String s1="hello";
- System.out.print(s1.split()); ///l
+ System.out.print(s1.toUpperCase()); /// HELLO
+
+#### LowerCase:
+String s1="HELLO";
+ System.out.print(s1.toLowerCase()); /// hello
+
+
+#### Substring:
+
+String s1="helloworld";
+System.out.print(s1.substring(5,8)); /// 
+
+#### replace
+String s1="helloworld";
+System.out.print(s1.replace("o","a")); /// hellawarld
+
+
+Char At will be used for to join first and last char
+
+### anaram 
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str1 = sc.nextLine().replaceAll(" ", "").toLowerCase();
+        String str2 = sc.nextLine().replaceAll(" ", "").toLowerCase();
+
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        System.out.println(Arrays.equals(arr1, arr2));
+    }
+}
