@@ -841,3 +841,80 @@ public class Main {
         }
     }
 }
+
+#### 2d array
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=4;
+
+        int arr[][]=new int[n][n];
+
+        for(int i=0;i<n;i++){
+
+            for(int j=0;j<n;j++){
+                 arr[i][j]=s.nextInt(); sum+=arr[i][j];
+            }
+        }
+        for(int i=0;i<n;i++){
+
+            for(int j=0;j<n;j++){
+                 System.out.println(arr[i][j]+" ");
+            }System.out.println();
+        }
+       System.out.println(sum); 
+
+    }
+}
+
+#### String
+*it is an object that is used to store sequence of characters , it can be declared as string litral or string objecct
+
+### string litral
+Sting s1 ="hello";
+
+#### Strig object
+String s1= new Stirng ("hello";
+)
+
+### String methods
+
+Length:
+
+ it is used to return the length of the given string in int type
+
+ eg:
+ String s1="hello";
+ System.out.print(s1.length());
+
+
+ CharAt:
+
+ it used to return the charaacter at the given index
+
+
+ String s1="hello";
+ System.out.print(s1.charAt(3)); ///l
+
+IndexOf():
+it is used to return the index of first occurence of the given character
+
+eg:
+String s1="hello";
+ System.out.print(s1.indexOf(4)); ///0
+
+ Trim:
+ it is used to remove the unwanted space (before,after)between the string
+ eg:
+ String s1="    hello   ";
+ System.out.print(s1.trim()); /// hello
+
+
+Split:
+it is used to 
+eg:
+String s1="hello";
+ System.out.print(s1.split()); ///l
