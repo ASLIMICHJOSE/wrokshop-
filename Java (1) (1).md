@@ -698,3 +698,276 @@ output-------3
              6         
 
 
+<<<<<<< HEAD
+=======
+public class Operations{
+
+    public static int add(int a,int b,int c){
+        return a+b+c;
+    }
+
+    public static void main(String[] args){
+        System.out.println(add(1,2,3));
+        int a = add(7,7,7);
+        System.out.print(a);
+    }
+}
+
+
+
+#### method overloading
+it is overloaded with same class name and same method name but different parameters
+
+
+import java.util.*;
+public class Operations{
+    public static int add(int a,int b){
+        return a+b;
+    }
+     public static double add(double a,double b){
+        return a+b;
+    }
+     public static int add(int a,int b,int c){
+        return a+b+c;
+    }
+    public static void main(String[] args){
+        System.out.println(add(1,2));//Static Mathod calling
+        System.out.println(add(1.2,2.3));
+        System.out.println(add(1,2,3));
+        
+    }
+}
+
+
+#### Array
+*array is the collections elements of similar data types
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      //int arr
+      Scanner s=new Scanner(System.in);
+      int n=s.nextInt();
+      int arr[]=new int[n];
+      
+      for(int i=0;i<n;i++){
+        arr[i]=s.nextInt();
+      }
+      
+      for(int i=0;i<n;i++){
+        System.out.print(arr[i]+" ");
+      }
+      
+    }
+    }
+
+
+##### array and find the sum of all elements.
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+
+        int n = 10;
+        int arr[] = new int[n];
+        int sum = 0;
+
+        for(int i = 0; i < n; i++){
+            arr[i] = s.nextInt();
+            sum += arr[i];
+        }
+
+        System.out.println(sum);
+    }
+}
+
+##### Insert a given integer x in the middle of a given array arr.
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();   // number to insert
+        int n = sc.nextInt();   // size of array
+
+        int[] arr = new int[n];
+
+        for(int i = 0; i < n; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        int index;
+
+        if(n % 2 == 0)
+            index = n / 2;
+        else
+            index = (n - 1) / 2;
+
+        for(int i = 0; i < index; i++){
+            System.out.println(arr[i]);
+        }
+
+        System.out.println(x);
+
+        for(int i = index; i < n; i++){
+            System.out.println(arr[i]);
+        }
+    }
+}
+
+
+##### Take an array, delete the element at the second index and return the resultant array.
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        for(int i = 0; i < n; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        for(int i = 0; i < n; i++){
+            if(i == 2) continue;   // skip second index
+            System.out.println(arr[i]);
+        }
+    }
+}
+
+#### 2d array
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=4;
+
+        int arr[][]=new int[n][n];
+
+        for(int i=0;i<n;i++){
+
+            for(int j=0;j<n;j++){
+                 arr[i][j]=s.nextInt(); sum+=arr[i][j];
+            }
+        }
+        for(int i=0;i<n;i++){
+
+            for(int j=0;j<n;j++){
+                 System.out.println(arr[i][j]+" ");
+            }System.out.println();
+        }
+       System.out.println(sum); 
+
+    }
+}
+
+#### String
+*it is an object that is used to store sequence of characters , it can be declared as string litral or string objecct
+
+### string litral
+Sting s1 ="hello";
+
+#### Strig object
+String s1= new Stirng ("hello";
+)
+
+### String methods
+
+#### Length:
+
+ it is used to return the length of the given string in int type
+
+ eg:
+ String s1="hello";
+ System.out.print(s1.length());
+
+
+#### CharAt:
+
+ it used to return the charaacter at the given index
+
+
+ String s1="hello";
+ System.out.print(s1.charAt(3)); ///l
+
+#### IndexOf():
+it is used to return the index of first occurence of the given character
+
+eg:
+String s1="hello";
+ System.out.print(s1.indexOf(4)); ///0
+
+#### Trim:
+ it is used to remove the unwanted space (before,after)between the string
+ eg:
+ String s1="    hello   ";
+ System.out.print(s1.trim()); /// hello
+
+
+#### Split:
+it is used to 
+eg:
+String s1="h,e,l,l,o";
+Sring s1[]=s.split(",");
+for(String a:s1);
+ System.out.print(a); 
+
+
+output:
+first line = l
+last=,
+
+
+#### UpperCase:
+String s1="hello";
+ System.out.print(s1.toUpperCase()); /// HELLO
+
+#### LowerCase:
+String s1="HELLO";
+ System.out.print(s1.toLowerCase()); /// hello
+
+
+#### Substring:
+
+String s1="helloworld";
+System.out.print(s1.substring(5,8)); /// 
+
+#### replace
+String s1="helloworld";
+System.out.print(s1.replace("o","a")); /// hellawarld
+
+
+Char At will be used for to join first and last char
+
+### anaram 
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str1 = sc.nextLine().replaceAll(" ", "").toLowerCase();
+        String str2 = sc.nextLine().replaceAll(" ", "").toLowerCase();
+
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        System.out.println(Arrays.equals(arr1, arr2));
+    }
+}
+>>>>>>> 1114dc3 (Save: commit from VS Code (user requested push))
