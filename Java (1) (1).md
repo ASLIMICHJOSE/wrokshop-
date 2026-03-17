@@ -971,3 +971,31 @@ public class Main {
     }
 }
 >>>>>>> 1114dc3 (Save: commit from VS Code (user requested push))
+
+
+#### First non-repeated character from a string
+import java.util.*;
+
+public class FirstNonRepeated {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        Map<Character, Integer> map = new LinkedHashMap<>();
+
+        
+        for (char ch : str.toCharArray()) {
+            if (ch != ' ') { 
+                map.put(ch, map.getOrDefault(ch, 0) + 1);
+            }
+        }
+
+        
+        for (char ch : map.keySet()) {
+            if (map.get(ch) == 1) {
+                System.out.println(ch);
+                return;
+            }
+        }
+    }
+}
