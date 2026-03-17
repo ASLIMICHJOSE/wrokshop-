@@ -999,3 +999,10 @@ public class FirstNonRepeated {
         }
     }
 }
+##### OOPS
+object oriented programming language
+class
+object 
+polymorphism
+encapsulation
+inheritence
