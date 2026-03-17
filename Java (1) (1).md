@@ -1006,3 +1006,8 @@ object
 polymorphism
 encapsulation
 inheritence
+
+
+###constructor
+it is an special type of method which has the name same as class name
+public class main
