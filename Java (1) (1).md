@@ -1011,3 +1011,11 @@ inheritence
 ###constructor
 it is an special type of method which has the name same as class name
 public class main
+
+
+
+#### Poly morphhism
+[poly means meny morph means forms]
+
+### method overloading
+the method has same class name for meny poblem
